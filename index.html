@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Farming</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4fff5;
+    color: #333;
+}
+
+header {
+    background: #14532d;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 27px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a3e635;
+}
+
+.hero {
+    min-height: 480px;
+    background: linear-gradient(#0007,#0007),
+    url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1600')
+    center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #65a30d;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #166534;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #166534;
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.benefits {
+    background: #dcfce7;
+}
+
+.contact {
+    background: #f0fdf4;
+}
+
+.contact input,
+.contact textarea {
+    width: 90%;
+    max-width: 550px;
+    padding: 13px;
+    margin: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #166534;
+    color: white;
+    border: none;
+    padding: 13px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin: 7px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 Vertical Farming</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#methods">Methods</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h2>Welcome to Vertical Farming</h2>
+        <p>Grow More Food in Less Space</p>
+        <a href="#about" class="btn">Explore More</a>
+    </div>
+</div>
+
+<section class="about" id="about">
+    <h2>About Vertical Farming</h2>
+    <p>
+        Vertical Farming is a modern agricultural technique
+        in which crops are grown in vertically stacked layers.
+        It helps to save space, reduce water consumption and
+        produce fresh vegetables throughout the year.
+        This technology is useful in cities where farming
+        space is limited.
+    </p>
+</section>
+
+<section id="methods">
+    <h2>Vertical Farming Methods</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600">
+            <h3>Hydroponics</h3>
+            <p>Plants grow without soil using nutrient-rich water.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=600">
+            <h3>Aeroponics</h3>
+            <p>Plant roots receive nutrients through a fine mist.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600">
+            <h3>Aquaponics</h3>
+            <p>A system that combines fish farming with plant growing.</p>
+        </div>
+    </div>
+</section>
+
+<section class="benefits" id="benefits">
+    <h2>Benefits of Vertical Farming</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>💧 Save Water</h3>
+            <p>Uses less water than many traditional farming methods.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Less Space</h3>
+            <p>Grow more crops in a smaller area.</p>
+        </div>
+
+        <div class="card">
+            <h3>🥬 Fresh Food</h3>
+            <p>Fresh vegetables can be produced near consumers.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Eco Friendly</h3>
+            <p>Supports efficient and sustainable agriculture.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Our Farming Gallery</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=600">
+            <h3>Green Plants</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600">
+            <h3>Modern Farming</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600">
+            <h3>Healthy Crops</h3>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <input type="email" id="email" placeholder="Your Email" required><br>
+        <input type="text" id="phone" placeholder="Your Phone Number"><br>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Vertical Farming | All Rights Reserved</p>
+    <p>Growing Green, Living Clean 🌿</p>
+</footer>
+
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    alert("Thank You " + name + "! Your form has been submitted.");
+
+    event.target.reset();
+}
+</script>
+
+</body>
+</html>
